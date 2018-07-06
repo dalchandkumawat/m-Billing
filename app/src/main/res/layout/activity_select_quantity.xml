@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectQuantity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pid"
+        android:hint="PID"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pname"
+        android:hint="PNAME"
+        android:layout_below="@id/pid"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:hint="PRICE"
+        android:layout_below="@id/pname"/>
+    <TextView
+        android:id="@+id/qtytitle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/price"
+        android:layout_marginTop="15dp"
+        android:text="Quantity"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/price"
+        android:layout_toRightOf="@id/qtytitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:background="#15b4c4"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/minus"
+        android:layout_below="@id/price"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/qty"
+        android:layout_below="@id/price"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ffffff"
+        android:background="#15b4c4"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/plus"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:background="#1cd524"
+        android:text="done" />
+
+</RelativeLayout>
