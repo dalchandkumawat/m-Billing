@@ -5,7 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/shopid"
+        android:hint="Shop Id"
+        android:inputType="phone"
+        android:layout_above="@id/billno"
+        android:layout_centerHorizontal="true"/>
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -19,6 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/userlogin"
+        android:padding="12dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
         android:text="START SHOPPING"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"/>
@@ -26,6 +36,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/adminlogin"
+        android:textColor="#ffffff"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
         android:text="Admin Login"
         android:layout_below="@id/userlogin"
         android:layout_centerHorizontal="true"/>

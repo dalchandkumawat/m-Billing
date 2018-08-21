@@ -21,13 +21,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/price"
         android:hint="Price"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:layout_below="@id/pname"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/done"
         android:text="DONE"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
         android:layout_below="@id/price"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>

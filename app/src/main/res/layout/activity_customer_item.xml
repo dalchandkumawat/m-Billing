@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".CustomerItem">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,17 +98,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/done"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
         android:text="Done"
         android:layout_margin="5dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_above="@id/longtext"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/addproduct"
+        android:padding="15dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
         android:text="Add Product"
         android:layout_margin="5dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"/>
-
-</RelativeLayout>
+        android:layout_above="@id/longtext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/longtext"
+        android:text="Long press the item to delete..."
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</ScrollView>
